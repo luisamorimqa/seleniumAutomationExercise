@@ -1,0 +1,318 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4783188800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Login com credenciais válidas",
+        "description": "",
+        "id": "login-de-usuário;login-com-credenciais-válidas",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 200349000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "informo um e-mail cadastrado",
+            "match": {
+              "location": "LoginStepDefinitions.informo_um_e_mail_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 217256000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "informo a senha válida",
+            "match": {
+              "location": "LoginStepDefinitions.informo_a_senha_válida()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2021100800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico no botão Login",
+            "match": {
+              "location": "LoginStepDefinitions.clico_no_botão_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 175327600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "devo ver a mensagem \"Logged in as \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logged in as ",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepDefinitions.devo_ver_a_mensagem(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@login-sucesso"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4326175700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Login com senha incorreta",
+        "description": "",
+        "id": "login-de-usuário;login-com-senha-incorreta",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 173138000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "informo um e-mail cadastrado",
+            "match": {
+              "location": "LoginStepDefinitions.informo_um_e_mail_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 193867600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "informo a senha incorretamente",
+            "match": {
+              "location": "LoginStepDefinitions.informo_a_senha_incorretamente()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1167558800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico no botão Login",
+            "match": {
+              "location": "LoginStepDefinitions.clico_no_botão_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 90641900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo ver a mensagem de erro \"Your email or password is incorrect!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your email or password is incorrect!",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinitions.devo_ver_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@senha-incorreta"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 5851603900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Login com e-mail não cadastrado",
+        "description": "",
+        "id": "login-de-usuário;login-com-e-mail-não-cadastrado",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 307692400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "informo um e-mail não cadastrado",
+            "match": {
+              "location": "LoginStepDefinitions.informo_um_e_mail_não_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 197153000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "informo a senha incorretamente",
+            "match": {
+              "location": "LoginStepDefinitions.informo_a_senha_incorretamente()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1165992400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "clico no botão Login",
+            "match": {
+              "location": "LoginStepDefinitions.clico_no_botão_Login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 85107000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "devo ver a mensagem de erro \"Your email or password is incorrect!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your email or password is incorrect!",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinitions.devo_ver_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@email-nao-cadastrado"
+          }
+        ]
+      }
+    ],
+    "name": "Login de usuário",
+    "description": "  Eu como usuário do sistema\n  Quero fazer login\n  Para realizar ações dentro do sistema",
+    "id": "login-de-usuário",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 3
+        }
+      },
+      {
+        "name": "@regressao",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 10
+        }
+      }
+    ]
+  }
+]

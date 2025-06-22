@@ -6,6 +6,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumber;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.Random;
+
 public class Commands extends RunCucumber {
 
     public static void waitElementBeClickable(By element, Integer time) {
@@ -71,6 +78,48 @@ public class Commands extends RunCucumber {
         } catch(Exception exception) {
             System.out.println("*************** Ocorreu um erro ao validar texto do elemento " + element + " ***************");
             System.out.println(exception);
+        }
+    }
+
+    public static String getNewEmail() {
+        Random random = new Random();
+        try {
+            String email = "email" + String.valueOf(random.nextInt(9999)) + "@mail.com";
+            return email;
+        } catch (Exception exception) {
+            System.out.println("Não foi possível retornar um email");
+            return String.valueOf(exception);
+        }
+    }
+
+    public static String getValidEmail() {
+        Properties properties = new Properties();
+
+        try(InputStream input = new FileInputStream("src/test/resources/credentials.properties")) {
+            properties.load(input);
+            return properties.getProperty("email");
+        } catch (Exception exception) {
+            return String.valueOf(exception);
+        }
+    }
+
+    public static String getInvalidPassword() {
+        Random random = new Random();
+        try {
+            return String.valueOf(random.nextInt());
+        } catch(Exception exception) {
+            return String.valueOf(exception);
+        }
+    }
+
+    public static String getValidPassword() {
+        Properties properties = new Properties();
+
+        try(InputStream input = new FileInputStream("src/test/resources/credentials.properties")) {
+            properties.load(input);
+            return properties.getProperty("senha");
+        } catch (Exception exception) {
+            return String.valueOf(exception);
         }
     }
 }
