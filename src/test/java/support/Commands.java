@@ -103,6 +103,17 @@ public class Commands extends RunCucumber {
         }
     }
 
+    public static String getRegisterName() {
+        Properties properties = new Properties();
+
+        try(InputStream input = new FileInputStream("src/test/resources/credentials.properties")) {
+            properties.load(input);
+            return properties.getProperty("firstname");
+        } catch(Exception exception) {
+            return String.valueOf(exception);
+        }
+    }
+
     public static String getInvalidPassword() {
         Random random = new Random();
         try {
