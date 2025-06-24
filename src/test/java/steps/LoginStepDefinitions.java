@@ -3,13 +3,12 @@ package steps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import datatest.UserDataTest;
+import datatest.LoginDataTest;
 import dto.UserDTO;
 import pages.HomePage;
 import pages.LoginPage;
 
-import static support.Commands.getInvalidPassword;
-import static support.Commands.getNewEmail;
+import static support.Commands.*;
 
 public class LoginStepDefinitions {
 
@@ -19,7 +18,7 @@ public class LoginStepDefinitions {
 
     @Dado("^que estou na página de login$")
     public void que_estou_na_página_de_login() {
-        userDTO = UserDataTest.setValue();
+        userDTO = LoginDataTest.setValue();
         loginPage.getPage();
     }
 
@@ -57,5 +56,30 @@ public class LoginStepDefinitions {
     @Quando("^informo um e-mail não cadastrado$")
     public void informo_um_e_mail_não_cadastrado() {
         loginPage.fillLoginEmailAddressField(getNewEmail());
+    }
+
+    @Dado("^preencho um nome$")
+    public void preencho_um_nome() {
+        loginPage.fillSignupNameField(getRegisteredName());
+    }
+
+    @Dado("^preencho um e-mail não cadastrado$")
+    public void preencho_um_e_mail_não_cadastrado() {
+        loginPage.fillSignupEmailField(getNewEmail());
+    }
+
+    @Dado("^preencho um e-mail já cadastrado$")
+    public void preencho_um_e_mail_já_cadastrado() {
+        loginPage.fillSignupEmailField(getRegisteredEmail());
+    }
+
+    @Dado("^clico no botão Signup$")
+    public void clico_no_botão_Signup() {
+        loginPage.clickSignupButton();
+    }
+
+    @Então("^a mensagem \"([^\"]*)\" deve ser exibida$")
+    public void a_mensagem_deve_ser_exibida(String value) {
+        loginPage.checkAlertMessageSignup(value);
     }
 }

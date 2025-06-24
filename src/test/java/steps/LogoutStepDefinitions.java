@@ -3,7 +3,7 @@ package steps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import datatest.UserDataTest;
+import datatest.LogoutDataTest;
 import dto.UserDTO;
 import pages.HomePage;
 import pages.LoginPage;
@@ -16,7 +16,7 @@ public class LogoutStepDefinitions {
 
     @Dado("^que esteja logado no sistema$")
     public void que_esteja_logado_no_sistema() {
-        userDTO = UserDataTest.setValue();
+        userDTO = LogoutDataTest.setValue();
         loginPage.getPage();
         loginPage.fillLoginEmailAddressField(userDTO.getEmail());
         loginPage.fillLoginPasswordField(userDTO.getPassword());

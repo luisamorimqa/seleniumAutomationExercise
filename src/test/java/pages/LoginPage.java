@@ -15,6 +15,12 @@ public class LoginPage extends BasePage {
 
     private By alertMessageLogin = By.xpath("//*[@id='form']/div/div/div[1]/div/form/p");
 
+    private By signupNameField = By.xpath("//*[@id='form']/div/div/div[3]/div/form/input[2]");
+    private By signupEmailField = By.xpath("//*[@id='form']/div/div/div[3]/div/form/input[3]");
+    private By signupButton = By.xpath("//*[@id='form']/div/div/div[3]/div/form/button");
+
+    private By alertMessageSignup = By.xpath("//*[@id='form']/div/div/div[3]/div/form/p");
+
     public void getPage() {
         getDriver("chrome").get(getBaseUrl() + pageUrl);
     }
@@ -33,6 +39,22 @@ public class LoginPage extends BasePage {
 
     public void checkAlertMessageLogin(String value) {
         checkText(alertMessageLogin, value);
+    }
+
+    public void fillSignupNameField(String value) {
+        fillField(signupNameField, value);
+    }
+
+    public void fillSignupEmailField(String value) {
+        fillField(signupEmailField, value);
+    }
+
+    public void clickSignupButton() {
+        clickElement(signupButton);
+    }
+
+    public void checkAlertMessageSignup(String value) {
+        checkText(alertMessageSignup, value);
     }
 
     public void checkLoginPage() {

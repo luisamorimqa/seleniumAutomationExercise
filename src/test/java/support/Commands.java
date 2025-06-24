@@ -7,8 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumber;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.Random;
@@ -92,7 +90,7 @@ public class Commands extends RunCucumber {
         }
     }
 
-    public static String getValidEmail() {
+    public static String getRegisteredEmail() {
         Properties properties = new Properties();
 
         try(InputStream input = new FileInputStream("src/test/resources/credentials.properties")) {
@@ -103,7 +101,7 @@ public class Commands extends RunCucumber {
         }
     }
 
-    public static String getRegisterName() {
+    public static String getRegisteredName() {
         Properties properties = new Properties();
 
         try(InputStream input = new FileInputStream("src/test/resources/credentials.properties")) {

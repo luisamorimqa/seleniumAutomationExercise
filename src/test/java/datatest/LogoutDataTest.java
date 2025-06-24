@@ -5,14 +5,14 @@ import support.SharedData;
 
 import static support.Commands.*;
 
-public class UserDataTest {
+public class LogoutDataTest {
 
     public static UserDTO setValue() {
 
         UserDTO userDTO = new UserDTO();
 
-        userDTO.setFirstname(getRegisterName());
-        userDTO.setEmail(getValidEmail());
+        userDTO.setFirstname(getRegisteredName());
+        userDTO.setEmail(getRegisteredEmail());
         userDTO.setPassword(getValidPassword());
 
         SharedData.set("userDTO", userDTO);
