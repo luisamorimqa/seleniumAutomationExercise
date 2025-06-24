@@ -57,6 +57,13 @@ public class LoginPage extends BasePage {
         checkText(alertMessageSignup, value);
     }
 
+    public void doSignup(String name, String email) {
+        getPage();
+        fillSignupNameField(name);
+        fillSignupEmailField(email);
+        clickSignupButton();
+    }
+
     public void checkLoginPage() {
         Assert.assertEquals("Login to your account", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div[1]/div/h2")).getText());
         Assert.assertEquals("New User Signup!", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div[3]/div/h2")).getText());

@@ -9,6 +9,7 @@ public class HomePage extends BasePage {
 
     private By loggedMessage = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[10]/a");
     private By logoutButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[4]/a");
+    private By deleteAccountButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[5]/a");
 
     public void checkLoggedMessage(String value) {
         //checkContainsText(loggedMessage, value);
@@ -21,5 +22,9 @@ public class HomePage extends BasePage {
 
     public void clickLogoutButton() {
         clickElement(logoutButton);
+    }
+
+    public void clickDeleteAccountButton() {
+        clickElement(deleteAccountButton);
     }
 }
