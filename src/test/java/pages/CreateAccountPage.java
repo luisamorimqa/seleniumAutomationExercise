@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import static support.Commands.clickElement;
-import static support.Commands.fillField;
+import static support.Commands.*;
+import static support.Commands.checkText;
 
 public class CreateAccountPage extends BasePage {
 
@@ -69,7 +69,12 @@ public class CreateAccountPage extends BasePage {
     }
 
     public void checkCreateAccountPage() {
-        Assert.assertEquals("ENTER ACCOUNT INFORMATION", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div/div/h2/b")).getText());
-        Assert.assertEquals("ADDRESS INFORMATION", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div/div/form/h2/b")).getText());
+        System.out.println("###############################################################################");
+        System.out.println("*************** Validando page ***************");
+        checkVisibility(By.xpath("//*[@id='form']/div/div/div/div/h2/b"), 5);
+        checkText(By.xpath("//*[@id='form']/div/div/div/div/h2/b"), "ENTER ACCOUNT INFORMATION");
+        checkVisibility(By.xpath("//*[@id='form']/div/div/div/div/form/h2/b"), 5);
+        checkText(By.xpath("//*[@id='form']/div/div/div/div/form/h2/b"),"ADDRESS INFORMATION");
+        System.out.println("*************** Page validada ***************");
     }
 }

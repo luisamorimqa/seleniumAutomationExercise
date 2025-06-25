@@ -72,6 +72,20 @@ public class Commands extends RunCucumber {
         }
     }
 
+    public static void checkTestContains(By element, String text) {
+        System.out.println("###############################################################################");
+        try {
+            System.out.println("*************** Validando texto ***************");
+            waitElementBeVisible(element, 5000);
+            Assert.assertTrue(getDriver().findElement(element).isDisplayed());
+            Assert.assertTrue(getDriver().findElement(element).getText().contains(text));
+            System.out.println("*************** Texto validado ***************");
+        } catch(Exception exception) {
+            System.out.println("*************** Ocorreu um erro ao validar texto do elemento " + element + " ***************");
+            System.out.println(exception);
+        }
+    }
+
     public static void checkContainsText(By element, String text) {
         System.out.println("###############################################################################");
         try {

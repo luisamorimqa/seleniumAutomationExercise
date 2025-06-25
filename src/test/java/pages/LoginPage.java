@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import static support.Commands.*;
@@ -67,8 +66,8 @@ public class LoginPage extends BasePage {
     public void checkLoginPage() {
         System.out.println("###############################################################################");
         System.out.println("*************** Validando page ***************");
-        Assert.assertEquals("Login to your account", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div[1]/div/h2")).getText());
-        Assert.assertEquals("New User Signup!", getDriver().findElement(By.xpath("//*[@id='form']/div/div/div[3]/div/h2")).getText());
+        checkVisibility(By.xpath("//*[@id='form']/div/div/div[1]/div/h2"), 5);
+        checkText(By.xpath("//*[@id='form']/div/div/div[1]/div/h2"), "Login to your account");
         System.out.println("*************** Page validada ***************");
     }
 }

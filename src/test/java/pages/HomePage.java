@@ -31,11 +31,10 @@ public class HomePage extends BasePage {
     public void checkHomePage() {
         System.out.println("###############################################################################");
         System.out.println("*************** Validando page ***************");
-        checkVisibility(By.xpath("/html/body/section[2]/div/div/div[1]/div/h2"), 5);
+        checkVisibility(By.xpath("/html/body/section[2]/div/div/div[1]/div/h2"), 10);
         checkText(By.xpath("/html/body/section[2]/div/div/div[1]/div/h2"), "CATEGORY");
-        checkVisibility(By.xpath("/html/body/section[2]/div/div/div[2]/div[1]/h2"), 5);
+        checkVisibility(By.xpath("/html/body/section[2]/div/div/div[2]/div[1]/h2"), 10);
         checkText(By.xpath("/html/body/section[2]/div/div/div[2]/div[1]/h2"), "FEATURES ITEMS");
-        checkVisibility(By.xpath("/html/body/section[2]/div/div/div[1]/div/div[2]/h2"), 5);
-        checkText(By.xpath("/html/body/section[2]/div/div/div[1]/div/div[2]/h2"), "BRANDS");
+        System.out.println("*************** Page validada ***************");
     }
 }

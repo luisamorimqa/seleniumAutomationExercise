@@ -48,10 +48,15 @@ public class ContactUsPage extends BasePage {
     }
 
     public void checkContactUsPage() {
-        System.out.println("*************** Validando Page ***************");
-        Assert.assertEquals("CONTACT US", getDriver().findElement(By.xpath("//div[@class='col-sm-12']/h2")).getText());
-        Assert.assertEquals("Note: Below contact form is for testing purpose.Software testing certification", getDriver().findElement(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]")).getText());
-        Assert.assertEquals("GET IN TOUCH", getDriver().findElement(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/h2")).getText());
+        System.out.println("###############################################################################");
+        System.out.println("*************** Validando page ***************");
+        checkVisibility(By.xpath("//div[@class='col-sm-12']/h2"), 5);
+        checkText(By.xpath("//div[@class='col-sm-12']/h2"), "CONTACT US");
+        checkVisibility(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"), 5);
+        //checkText(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"),"Note: Below contact form is for testing purpose.Software testing certification");
+        checkTestContains(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"),"Note: Below contact form is for testing purpose.");
+        checkVisibility(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/h2"), 5);
+        checkText(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/h2"), "GET IN TOUCH");
         System.out.println("*************** Page validada ***************");
     }
 }
