@@ -1,4 +1,129 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/createAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/contactUs.feature");
+formatter.feature({
+  "name": "Envio de mensagem pelo formulário de contato",
+  "description": "    Eu como cliente\n    Quero entrar em contato com a equipe do site\n    Para tirar dúvidas ou relatar problemas",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "name": "@contactus"
+    },
+    {
+      "name": "@regressao"
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "name": "que eu esteja na tela Contact us",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.que_eu_esteja_na_tela_Contact_us()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Envio de mensagem com sucesso",
+  "description": "",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "name": "@contactus"
+    },
+    {
+      "name": "@regressao"
+    },
+    {
+      "name": "@contactus-successful-shipping"
+    }
+  ]
+});
+formatter.step({
+  "name": "preencho o campo nome",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.preencho_o_campo_nome()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo email",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.preencho_o_campo_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo subject",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.preencho_o_campo_subject()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo message",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.preencho_o_campo_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono o arquivo",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.seleciono_o_arquivo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão submit",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.clico_no_botão_submit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "confirmo o alerta",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.confirmo_o_alerta()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a mensagem de sucesso \"Success! Your details have been submitted successfully.\" deve ser exibida",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "ContactUsStepDefinitions.a_mensagem_de_sucesso_deve_ser_exibida(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/createAccount.feature");
 formatter.feature({
   "name": "Criação de conta",
   "description": "    Eu como cliente\n    Quero me cadastrar no site\n    Para realizar compras",
@@ -78,7 +203,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_password()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_password()"
 });
 formatter.result({
   "status": "passed"
@@ -88,7 +213,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_firstname()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_firstname()"
 });
 formatter.result({
   "status": "passed"
@@ -98,7 +223,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_lastname()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_lastname()"
 });
 formatter.result({
   "status": "passed"
@@ -108,7 +233,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_company()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_company()"
 });
 formatter.result({
   "status": "passed"
@@ -118,7 +243,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_address()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_address()"
 });
 formatter.result({
   "status": "passed"
@@ -128,7 +253,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.seleciono_o_país()"
+  "location": "CreateAccountStepDefinitions.seleciono_o_país()"
 });
 formatter.result({
   "status": "passed"
@@ -138,7 +263,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_state()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_state()"
 });
 formatter.result({
   "status": "passed"
@@ -148,7 +273,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_city()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_city()"
 });
 formatter.result({
   "status": "passed"
@@ -158,7 +283,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_zipcode()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_zipcode()"
 });
 formatter.result({
   "status": "passed"
@@ -168,7 +293,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.preencho_o_campo_mobilenumber()"
+  "location": "CreateAccountStepDefinitions.preencho_o_campo_mobilenumber()"
 });
 formatter.result({
   "status": "passed"
@@ -178,7 +303,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "CreateAccountSteps.clico_no_botão_Create_Account()"
+  "location": "CreateAccountStepDefinitions.clico_no_botão_Create_Account()"
 });
 formatter.result({
   "status": "passed"
@@ -188,7 +313,7 @@ formatter.step({
   "keyword": "Então "
 });
 formatter.match({
-  "location": "CreateAccountSteps.a_mensagem_de_conta_criada_deve_ser_exibida(String)"
+  "location": "CreateAccountStepDefinitions.a_mensagem_de_conta_criada_deve_ser_exibida(String)"
 });
 formatter.result({
   "status": "passed"
@@ -198,7 +323,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.a_mensagem_congratulations_deve_ser_exibida(String)"
+  "location": "CreateAccountStepDefinitions.a_mensagem_congratulations_deve_ser_exibida(String)"
 });
 formatter.result({
   "status": "passed"
@@ -208,7 +333,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "CreateAccountSteps.a_mensagem_advantage_deve_ser_exibida(String)"
+  "location": "CreateAccountStepDefinitions.a_mensagem_advantage_deve_ser_exibida(String)"
 });
 formatter.result({
   "status": "passed"
@@ -308,7 +433,7 @@ formatter.step({
   "keyword": "Dado "
 });
 formatter.match({
-  "location": "DeleteAccountSteps.que_eu_tenha_uma_conta_no_site()"
+  "location": "DeleteAccountStepDefinitions.que_eu_tenha_uma_conta_no_site()"
 });
 formatter.result({
   "status": "passed"
@@ -318,7 +443,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "DeleteAccountSteps.esteja_logado()"
+  "location": "DeleteAccountStepDefinitions.esteja_logado()"
 });
 formatter.result({
   "status": "passed"
@@ -341,7 +466,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "DeleteAccountSteps.clico_no_botão_deleteAccount()"
+  "location": "DeleteAccountStepDefinitions.clico_no_botão_deleteAccount()"
 });
 formatter.result({
   "status": "passed"
@@ -351,7 +476,7 @@ formatter.step({
   "keyword": "Então "
 });
 formatter.match({
-  "location": "DeleteAccountSteps.a_tela_AccountDeleted_deve_ser_exibida()"
+  "location": "DeleteAccountStepDefinitions.a_tela_AccountDeleted_deve_ser_exibida()"
 });
 formatter.result({
   "status": "passed"

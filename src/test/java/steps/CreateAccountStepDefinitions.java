@@ -8,7 +8,7 @@ import dto.UserDTO;
 import pages.AccountCreatedPage;
 import pages.CreateAccountPage;
 
-public class CreateAccountSteps {
+public class CreateAccountStepDefinitions {
 
     UserDTO userDTO = new UserDTO();
     CreateAccountPage createAccountPage = new CreateAccountPage();

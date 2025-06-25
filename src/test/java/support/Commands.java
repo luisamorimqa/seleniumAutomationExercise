@@ -1,7 +1,9 @@
 package support;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumber;
@@ -46,6 +48,7 @@ public class Commands extends RunCucumber {
     public static void clickElement(By element) {
         System.out.println("###############################################################################");
         try {
+            System.out.println("*************** Clicando no elemento " + element + " ***************");
             waitElementBeClickable(element, 5000);
             getDriver().findElement(element).click();
             System.out.println("*************** Clique realizado ***************");
@@ -58,9 +61,11 @@ public class Commands extends RunCucumber {
     public static void checkText(By element, String text) {
         System.out.println("###############################################################################");
         try {
+            System.out.println("*************** Validando texto ***************");
             waitElementBeVisible(element, 5000);
             Assert.assertTrue(getDriver().findElement(element).isDisplayed());
             Assert.assertEquals(text, getDriver().findElement(element).getText());
+            System.out.println("*************** Texto validado ***************");
         } catch(Exception exception) {
             System.out.println("*************** Ocorreu um erro ao validar texto do elemento " + element + " ***************");
             System.out.println(exception);
@@ -130,5 +135,20 @@ public class Commands extends RunCucumber {
         } catch (Exception exception) {
             return String.valueOf(exception);
         }
+    }
+
+    public static void alertAccept() {
+        WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+        alert.accept();
+    }
+
+    public static void fileUpload(By element) {
+        System.out.println("###############################################################################");
+        System.out.println("*************** Selecionando arquivo ***************");
+        WebElement uploadInput = getDriver().findElement(element);
+        String patchFile = "D:\\Projetos\\SeleniumAutomationExercise\\src\\test\\resources\\envio.txt";
+        uploadInput.sendKeys(patchFile);
+        System.out.println("*************** Arquivo selecionado ***************");
     }
 }

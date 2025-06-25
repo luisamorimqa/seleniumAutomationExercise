@@ -12,7 +12,7 @@ import pages.LoginPage;
 import support.AccountUtils;
 import support.SharedData;
 
-public class DeleteAccountSteps {
+public class DeleteAccountStepDefinitions {
 
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
