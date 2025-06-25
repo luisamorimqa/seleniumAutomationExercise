@@ -11,179 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15259426000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que eu esteja na tela Contact us",
-            "match": {
-              "location": "ContactUsStepDefinitions.que_eu_esteja_na_tela_Contact_us()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 12,
-        "name": "Envio de mensagem com sucesso",
-        "description": "",
-        "id": "envio-de-mensagem-pelo-formulário-de-contato;envio-de-mensagem-com-sucesso",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 1217548000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "preencho o campo nome",
-            "match": {
-              "location": "ContactUsStepDefinitions.preencho_o_campo_nome()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 559221100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "preencho o campo email",
-            "match": {
-              "location": "ContactUsStepDefinitions.preencho_o_campo_email()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 411952000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "preencho o campo subject",
-            "match": {
-              "location": "ContactUsStepDefinitions.preencho_o_campo_subject()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 452130700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "preencho o campo message",
-            "match": {
-              "location": "ContactUsStepDefinitions.preencho_o_campo_message()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 52296300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "seleciono o arquivo",
-            "match": {
-              "location": "ContactUsStepDefinitions.seleciono_o_arquivo()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 180128400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "clico no botão submit",
-            "match": {
-              "location": "ContactUsStepDefinitions.clico_no_botão_submit()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 21127700,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "confirmo o alerta",
-            "match": {
-              "location": "ContactUsStepDefinitions.confirmo_o_alerta()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 158130500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "a mensagem de sucesso \"Success! Your details have been submitted successfully.\" deve ser exibida",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Success! Your details have been submitted successfully.",
-                  "offset": 23
-                }
-              ],
-              "location": "ContactUsStepDefinitions.a_mensagem_de_sucesso_deve_ser_exibida(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@contactus"
-          },
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@contactus-successful-shipping"
-          }
-        ]
-      }
-    ],
-    "name": "Envio de mensagem pelo formulário de contato",
-    "description": "    Eu como cliente\n    Quero entrar em contato com a equipe do site\n    Para tirar dúvidas ou relatar problemas",
-    "id": "envio-de-mensagem-pelo-formulário-de-contato",
-    "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/contactUs.feature",
-    "tags": [
-      {
-        "name": "@contactus",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 3
-        }
-      },
-      {
-        "name": "@regressao",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 14
-        }
-      }
-    ]
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 4241414700,
+              "duration": 7296728200,
               "status": "passed"
             },
             "line": 9,
@@ -205,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1467260200,
+              "duration": 305306600,
               "status": "passed"
             },
             "line": 13,
@@ -217,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 574592000,
+              "duration": 448020200,
               "status": "passed"
             },
             "line": 14,
@@ -229,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 2620192500,
+              "duration": 1342549700,
               "status": "passed"
             },
             "line": 15,
@@ -241,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 712529100,
+              "duration": 1190779000,
               "status": "passed"
             },
             "line": 16,
@@ -253,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 519064000,
+              "duration": 370604500,
               "status": "passed"
             },
             "line": 17,
@@ -265,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 826219800,
+              "duration": 249635200,
               "status": "passed"
             },
             "line": 18,
@@ -277,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 389993900,
+              "duration": 318360800,
               "status": "passed"
             },
             "line": 19,
@@ -289,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 428845500,
+              "duration": 277869900,
               "status": "passed"
             },
             "line": 20,
@@ -301,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 176051300,
+              "duration": 148989100,
               "status": "passed"
             },
             "line": 21,
@@ -313,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 236296900,
+              "duration": 229352900,
               "status": "passed"
             },
             "line": 22,
@@ -325,7 +153,7 @@
           },
           {
             "result": {
-              "duration": 229827300,
+              "duration": 245077400,
               "status": "passed"
             },
             "line": 23,
@@ -337,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 221575500,
+              "duration": 173630500,
               "status": "passed"
             },
             "line": 24,
@@ -349,7 +177,7 @@
           },
           {
             "result": {
-              "duration": 325822300,
+              "duration": 222478400,
               "status": "passed"
             },
             "line": 25,
@@ -361,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 1672868500,
+              "duration": 1571897300,
               "status": "passed"
             },
             "line": 26,
@@ -373,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 426205800,
+              "duration": 355486800,
               "status": "passed"
             },
             "line": 27,
@@ -391,7 +219,7 @@
           },
           {
             "result": {
-              "duration": 181941200,
+              "duration": 288073800,
               "status": "passed"
             },
             "line": 28,
@@ -409,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 209942900,
+              "duration": 452793500,
               "status": "passed"
             },
             "line": 29,
@@ -437,102 +265,6 @@
             "name": "@create-account-success"
           }
         ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 4433227800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 32,
-        "name": "E-mail já existente",
-        "description": "",
-        "id": "criação-de-conta;e-mail-já-existente",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 244159100,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "preencho um nome",
-            "match": {
-              "location": "LoginStepDefinitions.preencho_um_nome()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 344050400,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "preencho um e-mail já cadastrado",
-            "match": {
-              "location": "LoginStepDefinitions.preencho_um_e_mail_já_cadastrado()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1367690700,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "clico no botão Signup",
-            "match": {
-              "location": "LoginStepDefinitions.clico_no_botão_Signup()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 885108200,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "a mensagem \"Email Address already exist!\" deve ser exibida",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Email Address already exist!",
-                  "offset": 12
-                }
-              ],
-              "location": "LoginStepDefinitions.a_mensagem_deve_ser_exibida(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@create-account"
-          },
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@create-account-email-existente"
-          }
-        ]
       }
     ],
     "name": "Criação de conta",
@@ -555,516 +287,6 @@
         "location": {
           "line": 2,
           "column": 19
-        }
-      }
-    ]
-  },
-  {
-    "line": 4,
-    "elements": [
-      {
-        "line": 9,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 11149814400,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que eu tenha uma conta no site",
-            "match": {
-              "location": "DeleteAccountStepDefinitions.que_eu_tenha_uma_conta_no_site()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 3183601300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "esteja logado",
-            "match": {
-              "location": "DeleteAccountStepDefinitions.esteja_logado()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "Deleção com sucesso",
-        "description": "",
-        "id": "deleção-de-conta;deleção-com-sucesso",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 814720600,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "clico no botão deleteAccount",
-            "match": {
-              "location": "DeleteAccountStepDefinitions.clico_no_botão_deleteAccount()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 468684300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "a tela AccountDeleted deve ser exibida",
-            "match": {
-              "location": "DeleteAccountStepDefinitions.a_tela_AccountDeleted_deve_ser_exibida()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@delete-account"
-          },
-          {
-            "name": "@regressao"
-          }
-        ]
-      }
-    ],
-    "name": "Deleção de conta",
-    "description": "    Eu como usuário\n    Quero deletar minha conta\n    Para que não tenha mais acesso ao site",
-    "id": "deleção-de-conta",
-    "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/deleteAccount.feature",
-    "tags": [
-      {
-        "name": "@delete-account",
-        "type": "Tag",
-        "location": {
-          "line": 3,
-          "column": 3
-        }
-      },
-      {
-        "name": "@regressao",
-        "type": "Tag",
-        "location": {
-          "line": 3,
-          "column": 19
-        }
-      }
-    ]
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 4126374200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 12,
-        "name": "Login com credenciais válidas",
-        "description": "",
-        "id": "login-de-usuário;login-com-credenciais-válidas",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 309827800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "informo um e-mail cadastrado",
-            "match": {
-              "location": "LoginStepDefinitions.informo_um_e_mail_cadastrado()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 314451500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "informo a senha válida",
-            "match": {
-              "location": "LoginStepDefinitions.informo_a_senha_válida()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 2725300400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "clico no botão Login",
-            "match": {
-              "location": "LoginStepDefinitions.clico_no_botão_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 916729700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "devo ver a mensagem \"Logged in as \"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Logged in as ",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStepDefinitions.devo_ver_a_mensagem(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@login-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 4555569200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 19,
-        "name": "Login com senha incorreta",
-        "description": "",
-        "id": "login-de-usuário;login-com-senha-incorreta",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 3443882000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "informo um e-mail cadastrado",
-            "match": {
-              "location": "LoginStepDefinitions.informo_um_e_mail_cadastrado()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 371028100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "informo a senha incorretamente",
-            "match": {
-              "location": "LoginStepDefinitions.informo_a_senha_incorretamente()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 962384100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "clico no botão Login",
-            "match": {
-              "location": "LoginStepDefinitions.clico_no_botão_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 396371800,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "devo ver a mensagem de erro \"Your email or password is incorrect!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your email or password is incorrect!",
-                  "offset": 29
-                }
-              ],
-              "location": "LoginStepDefinitions.devo_ver_a_mensagem_de_erro(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@senha-incorreta"
-          }
-        ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 5083167200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginStepDefinitions.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 26,
-        "name": "Login com e-mail não cadastrado",
-        "description": "",
-        "id": "login-de-usuário;login-com-e-mail-não-cadastrado",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 663592600,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "informo um e-mail não cadastrado",
-            "match": {
-              "location": "LoginStepDefinitions.informo_um_e_mail_não_cadastrado()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 366376600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "informo a senha incorretamente",
-            "match": {
-              "location": "LoginStepDefinitions.informo_a_senha_incorretamente()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 885680700,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "clico no botão Login",
-            "match": {
-              "location": "LoginStepDefinitions.clico_no_botão_Login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 330622100,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "devo ver a mensagem de erro \"Your email or password is incorrect!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your email or password is incorrect!",
-                  "offset": 29
-                }
-              ],
-              "location": "LoginStepDefinitions.devo_ver_a_mensagem_de_erro(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@email-nao-cadastrado"
-          }
-        ]
-      }
-    ],
-    "name": "Login de usuário",
-    "description": "  Eu como usuário do sistema\n  Quero fazer login\n  Para realizar ações dentro do sistema",
-    "id": "login-de-usuário",
-    "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 3
-        }
-      },
-      {
-        "name": "@regressao",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 10
-        }
-      }
-    ]
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 9205385500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que esteja logado no sistema",
-            "match": {
-              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 11,
-        "name": "Logout do usuário",
-        "description": "",
-        "id": "logout;logout-do-usuário",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 1098371700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "clico no botão Logout",
-            "match": {
-              "location": "LogoutStepDefinitions.clico_no_botão_Logout()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 232540800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "devo ser redirecionado para a página de login",
-            "match": {
-              "location": "LogoutStepDefinitions.devo_ser_redirecionado_para_a_página_de_login()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@logout"
-          },
-          {
-            "name": "@regressao"
-          }
-        ]
-      }
-    ],
-    "name": "Logout",
-    "description": "  Eu como usuário do sistema\n  Quero fazer logoff\n  Para proteger a integridade dos meus dados",
-    "id": "logout",
-    "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/logout.feature",
-    "tags": [
-      {
-        "name": "@logout",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
-        }
-      },
-      {
-        "name": "@regressao",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 9
         }
       }
     ]

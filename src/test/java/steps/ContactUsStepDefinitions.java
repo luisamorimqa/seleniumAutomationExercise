@@ -4,14 +4,10 @@ import com.github.javafaker.Faker;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUsPage;
 import pages.HomePage;
 import pages.LoginPage;
 
-import static runner.RunBase.getDriver;
 import static support.Commands.*;
 
 public class ContactUsStepDefinitions {

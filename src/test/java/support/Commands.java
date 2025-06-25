@@ -5,6 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumber;
 
@@ -86,23 +87,10 @@ public class Commands extends RunCucumber {
         }
     }
 
-    public static void checkContainsText(By element, String text) {
-        System.out.println("###############################################################################");
-        try {
-            waitElementBeVisible(element, 5000);
-            Assert.assertTrue(getDriver().findElement(element).isDisplayed());
-            Assert.assertTrue(getDriver().findElement(element).getText().contains(text));
-        } catch(Exception exception) {
-            System.out.println("*************** Ocorreu um erro ao validar texto do elemento " + element + " ***************");
-            System.out.println(exception);
-        }
-    }
-
     public static String getNewEmail() {
         Random random = new Random();
         try {
-            String email = "email" + String.valueOf(random.nextInt(9999)) + "@mail.com";
-            return email;
+            return "email" + String.valueOf(random.nextInt(9999)) + "@mail.com";
         } catch (Exception exception) {
             System.out.println("Não foi possível retornar um email");
             return String.valueOf(exception);
@@ -164,5 +152,12 @@ public class Commands extends RunCucumber {
         String patchFile = "D:\\Projetos\\SeleniumAutomationExercise\\src\\test\\resources\\envio.txt";
         uploadInput.sendKeys(patchFile);
         System.out.println("*************** Arquivo selecionado ***************");
+    }
+
+    public static void selectCombo(By element, String value) {
+        System.out.println("###############################################################################");
+        WebElement webElement = getDriver().findElement(element);
+        Select select = new Select(webElement);
+        select.selectByVisibleText(value);
     }
 }

@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -43,9 +42,7 @@ public class CreateAccountPage extends BasePage {
     }
 
     public void fillCountry(String value) {
-        WebElement countryElement = getDriver().findElement(countryField);
-        Select countrySelect = new Select(countryElement);
-        countrySelect.selectByVisibleText(value);
+        selectCombo(countryField, value);
     }
 
     public void fillState(String value) {

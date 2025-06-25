@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import static support.Commands.*;
@@ -53,7 +52,6 @@ public class ContactUsPage extends BasePage {
         checkVisibility(By.xpath("//div[@class='col-sm-12']/h2"), 5);
         checkText(By.xpath("//div[@class='col-sm-12']/h2"), "CONTACT US");
         checkVisibility(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"), 5);
-        //checkText(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"),"Note: Below contact form is for testing purpose.Software testing certification");
         checkTestContains(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/div[1]"),"Note: Below contact form is for testing purpose.");
         checkVisibility(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/h2"), 5);
         checkText(By.xpath("//*[@id='contact-page']/div[2]/div[1]/div/h2"), "GET IN TOUCH");
