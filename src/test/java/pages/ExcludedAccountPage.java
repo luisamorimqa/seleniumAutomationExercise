@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import static support.Commands.checkText;
+import static support.Commands.*;
 
 public class ExcludedAccountPage extends BasePage {
 
@@ -15,11 +15,11 @@ public class ExcludedAccountPage extends BasePage {
     }
 
     public void checkExcludedAccountMessage(String value) {
-        checkText(excludedAccountMessage, value);
+        checkTextContains(excludedAccountMessage, value);
     }
 
     public void checkInstructionsMessage(String value) {
-        checkText(instructionsMessage, value);
+        checkTextContains(instructionsMessage, value);
     }
 
     public void checkExcludedAccountPage() {

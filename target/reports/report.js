@@ -1,4 +1,113 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/contactUs.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/addProductatCart.feature");
+formatter.feature({
+  "name": "Adiconar produto ao carrinho",
+  "description": "    Eu como usuário\n    Quero adicionar um produto ao carrinho\n    Para que eu possa realizar uma compra",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "name": "@regressao"
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "name": "que eu tenha uma conta no site",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "DeleteAccountStepDefinitions.que_eu_tenha_uma_conta_no_site()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "esteja logado",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "DeleteAccountStepDefinitions.esteja_logado()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Adição de produto ao carrinho",
+  "description": "",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "name": "@regressao"
+    },
+    {
+      "name": "@add-product-at-cart-success"
+    }
+  ]
+});
+formatter.step({
+  "name": "clico no botão Products",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Products()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a tela de produtos é exibida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.a_tela_de_produtos_é_exibida()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão \u0027Add to cart\u0027 do primeiro produto",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Add_to_cart_do_primeiro_produto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão \u0027Continue Shopping\u0027",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Continue_Shopping()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão \u0027View Cart\u0027",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.clico_no_botão_View_Cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verifico o produto no carrinho",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "AddProductAtCartStepDefinitions.verifico_o_produto_no_carrinho()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/contactUs.feature");
 formatter.feature({
   "name": "Envio de mensagem pelo formulário de contato",
   "description": "    Eu como cliente\n    Quero entrar em contato com a equipe do site\n    Para tirar dúvidas ou relatar problemas",

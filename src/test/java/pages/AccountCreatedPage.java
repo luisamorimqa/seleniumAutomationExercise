@@ -24,6 +24,6 @@ public class AccountCreatedPage extends BasePage {
     }
 
     public void checkPrivilegesMessage(String value) {
-        checkTestContains(privilegesMessage, value);
+        checkTextContains(privilegesMessage, value);
     }
 }

@@ -73,7 +73,7 @@ public class Commands extends RunCucumber {
         }
     }
 
-    public static void checkTestContains(By element, String text) {
+    public static void checkTextContains(By element, String text) {
         System.out.println("###############################################################################");
         try {
             System.out.println("*************** Validando texto ***************");
