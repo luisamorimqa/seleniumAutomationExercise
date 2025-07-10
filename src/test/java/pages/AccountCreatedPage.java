@@ -2,8 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import static support.Commands.checkText;
-import static support.Commands.clickElement;
+import static support.Commands.*;
 
 public class AccountCreatedPage extends BasePage {
 
@@ -25,6 +24,6 @@ public class AccountCreatedPage extends BasePage {
     }
 
     public void checkPrivilegesMessage(String value) {
-        checkText(privilegesMessage, value);
+        checkTestContains(privilegesMessage, value);
     }
 }

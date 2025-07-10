@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/reports/cucumberTests.json", "html:target/reports/"},
         features = {"src/test/resources/features"},
         glue = {"steps"},
-        tags = {"@create-account-success"}
+        tags = {"@regressao"}
 )
 public class RunCucumber extends RunBase {
 
