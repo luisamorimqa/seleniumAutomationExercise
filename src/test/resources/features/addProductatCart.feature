@@ -6,8 +6,7 @@
     Para que eu possa realizar uma compra
 
   Contexto:
-    Dado que eu tenha uma conta no site
-    E esteja logado
+    Dado que esteja logado no sistema
 
     @add-product-at-cart-success
     Cenário: Adição de produto ao carrinho
