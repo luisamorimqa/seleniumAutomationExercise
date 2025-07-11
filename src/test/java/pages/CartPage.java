@@ -1,7 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
+import support.SharedData;
 
+import static support.Commands.checkText;
 import static support.Commands.checkVisibility;
 
 public class CartPage extends BasePage {
@@ -10,5 +12,10 @@ public class CartPage extends BasePage {
 
     public void checkProductAtCart() {
         checkVisibility(product, 10);
+    }
+
+    public void checkProductName() {
+        String productName = SharedData.get("productName");
+        checkText(product, productName);
     }
 }

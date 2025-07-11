@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import support.SharedData;
 
 import static support.Commands.*;
 
@@ -17,6 +18,8 @@ public class ProductsPage extends BasePage {
     public void clickAddToCartFirstProduct() {
         Actions actions = new Actions(getDriver());
         actions.moveToElement(getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]"))).perform();
+        String productName = getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/p")).getText();
+        SharedData.set("productName", productName);
         WebDriverWait wait = new WebDriverWait(getDriver(), 10);
         wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a"))));
         clickElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a"));
@@ -25,6 +28,8 @@ public class ProductsPage extends BasePage {
     public void clickAddToCartAndViewCart() {
         Actions actions = new Actions(getDriver());
         actions.moveToElement(getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]"))).perform();
+        String productName = getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/p")).getText();
+        SharedData.set("productName", productName);
         WebDriverWait wait = new WebDriverWait(getDriver(), 10);
         wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(By.xpath("//*[@id='cartModal']/div/div/div[2]/p[2]/a/u"))));
     }

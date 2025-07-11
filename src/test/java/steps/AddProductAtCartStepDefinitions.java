@@ -42,5 +42,6 @@ public class AddProductAtCartStepDefinitions {
     @Então("^verifico o produto no carrinho$")
     public void verifico_o_produto_no_carrinho() throws Exception {
         cartPage.checkProductAtCart();
+        cartPage.checkProductName();
     }
 }
