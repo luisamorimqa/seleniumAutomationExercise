@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10795236000,
+              "duration": 7592265500,
               "status": "passed"
             },
             "line": 9,
@@ -25,63 +25,46 @@
       },
       {
         "line": 12,
-        "name": "Subscription at products page",
+        "name": "Filter Polo brand products",
         "description": "",
-        "id": "subscription;subscription-at-products-page",
+        "id": ";filter-polo-brand-products",
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 3837583900,
+              "duration": 1675948600,
               "status": "passed"
             },
             "line": 13,
-            "name": "acesso a tela de produtos",
+            "name": "acesse a tela de produtos",
             "match": {
-              "location": "SubscriptionStepDefinitions.acesso_a_tela_de_produtos()"
+              "location": "CartBrandProductsStepDefinitions.acesse_a_tela_de_produtos()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1550010800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "seleciono o brand name",
+            "match": {
+              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 257132700,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "preencho o campo Your e-mail address",
-            "match": {
-              "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 116681000,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cPO[u]LO\u003e but was:\u003cPO[]LO\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat support.Commands.checkText(Commands.java:68)\r\n\tat pages.ProductsPage.checkShowCategory(ProductsPage.java:89)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o_mesmo_brand_name(CartBrandProductsStepDefinitions.java:27)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o mesmo brand name(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
+              "duration": 91249100,
+              "status": "failed"
             },
             "line": 15,
-            "name": "clico no botão confirmar",
+            "name": "o campo de categoria e marca deverá mostrar o mesmo brand name",
             "match": {
-              "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 81535600,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "a mensagem \"You have been successfully subscribed!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "You have been successfully subscribed!",
-                  "offset": 12
-                }
-              ],
-              "location": "SubscriptionStepDefinitions.a_mensagem(String)"
+              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o_mesmo_brand_name()"
             },
             "keyword": "Então "
           }
@@ -91,103 +74,19 @@
             "name": "@regressao"
           },
           {
-            "name": "@subscription"
+            "name": "@filter-brand"
           },
           {
-            "name": "@subscribe-product-page"
-          }
-        ]
-      },
-      {
-        "line": 8,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 7142287000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que esteja logado no sistema",
-            "match": {
-              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 19,
-        "name": "Subscription at home page",
-        "description": "",
-        "id": "subscription;subscription-at-home-page",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 295185500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho o campo Your e-mail address",
-            "match": {
-              "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 128544800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botão confirmar",
-            "match": {
-              "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 75845800,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "a mensagem \"You have been successfully subscribed!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "You have been successfully subscribed!",
-                  "offset": 12
-                }
-              ],
-              "location": "SubscriptionStepDefinitions.a_mensagem(String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regressao"
-          },
-          {
-            "name": "@subscription"
-          },
-          {
-            "name": "@subscribe-home-page"
+            "name": "@filter-brand-products"
           }
         ]
       }
     ],
-    "name": "Subscription",
-    "description": "    Eu como usuário\n    Quero me inscrever\n    Para receber informações e atualizações do site",
-    "id": "subscription",
+    "name": "",
+    "description": "    Eu como usuário\n    Quero filtrar os produtos por marca\n    Para conseguir encontrar os produtos mais facilmente",
+    "id": "",
     "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/subscription.feature",
+    "uri": "src/test/resources/features/viewAndCartBrandProducts.feature",
     "tags": [
       {
         "name": "@regressao",
@@ -198,7 +97,7 @@
         }
       },
       {
-        "name": "@subscription",
+        "name": "@filter-brand",
         "type": "Tag",
         "location": {
           "line": 2,

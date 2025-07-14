@@ -19,6 +19,9 @@ public class ProductsPage extends BasePage {
     private By subscriptionButton = By.id("subscribe");
     private By subscriptionSuccessMessage = By.xpath("//*[@id='success-subscribe']/div");
 
+    private By brandsOptions = By.xpath("//div[@class='brands-name']/ul/li[1]/a");
+    private By showCategory = By.xpath("//h2[@class='title text-center']/a/span");
+
     public void fillSubscriptionEmail(String value) {
         fillField(emailSubscriptionField, value);
     }
@@ -76,5 +79,13 @@ public class ProductsPage extends BasePage {
     public void checkProductsPage() {
         checkVisibility(By.xpath("/html/body/section[2]/div/div/div[2]/div/h2"), 5);
         checkText(By.xpath("/html/body/section[2]/div/div/div[2]/div/h2"), "ALL PRODUCTS");
+    }
+
+    public void clickBrandsOption() {
+        clickElement(brandsOptions);
+    }
+
+    public void checkShowCategory(String value) {
+        checkText(showCategory, value);
     }
 }
