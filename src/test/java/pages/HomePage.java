@@ -12,6 +12,21 @@ public class HomePage extends BasePage {
     private By contactUsButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[9]/a");
     private By testCaseButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[6]/a");
     private By productsButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[2]/a");
+    private By emailSubscription = By.id("subscribe_email");
+    private By subscriptionButton = By.id("subscribe");
+    private By subscriptionSuccess = By.xpath("//*[@id='success-subscribe']/div");
+
+    public void fillEmailSubscription(String value) {
+        fillField(emailSubscription, value);
+    }
+
+    public void clickSubscriptionButton() {
+        clickElement(subscriptionButton);
+    }
+
+    public void checkMessageSubscriptionSuccess(String value) {
+        checkText(subscriptionSuccess, value);
+    }
 
     public void checkLoggedMessage(String value) {
         checkText(loggedMessage, value);

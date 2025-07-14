@@ -1,11 +1,14 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/removeProductOfCart.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/subscription.feature");
 formatter.feature({
-  "name": "Remove produto do carrinho",
-  "description": "    Eu como usuário do sistema\n    Quero remover produto do carrinho\n    Para que eu não compre um produto não desejado",
+  "name": "Subscription",
+  "description": "    Eu como usuário\n    Quero me inscrever\n    Para receber informações e atualizações do site",
   "keyword": "Funcionalidade",
   "tags": [
     {
       "name": "@regressao"
+    },
+    {
+      "name": "@subscription"
     }
   ]
 });
@@ -24,58 +27,8 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "clico no botão Products",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Products()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "a tela de produtos é exibida",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AddProductAtCartStepDefinitions.a_tela_de_produtos_é_exibida()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico no botão \u0027Add to cart\u0027 do primeiro produto",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Add_to_cart_do_primeiro_produto()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico no botão \u0027Continue Shopping\u0027",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AddProductAtCartStepDefinitions.clico_no_botão_Continue_Shopping()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico no botão \u0027View Cart\u0027",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "AddProductAtCartStepDefinitions.clico_no_botão_View_Cart()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "Remove produto com sucesso",
+  "name": "Subscription at products page",
   "description": "",
   "keyword": "Cenário",
   "tags": [
@@ -83,26 +36,110 @@ formatter.scenario({
       "name": "@regressao"
     },
     {
-      "name": "@remove-at-cart-success"
+      "name": "@subscription"
+    },
+    {
+      "name": "@subscribe-product-page"
     }
   ]
 });
 formatter.step({
-  "name": "clico no botão remover produto do carrinho",
+  "name": "acesso a tela de produtos",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "RemoveProductAtCartStepDefinitions.clico_no_botão_remover_produto_do_carrinho()"
+  "location": "SubscriptionStepDefinitions.acesso_a_tela_de_produtos()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "o produto deve ser removido do carrinho",
+  "name": "preencho o campo Your e-mail address",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão confirmar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a mensagem \"You have been successfully subscribed!\"",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "RemoveProductAtCartStepDefinitions.o_produto_deve_ser_removido_do_carrinho()"
+  "location": "SubscriptionStepDefinitions.a_mensagem(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "name": "que esteja logado no sistema",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Subscription at home page",
+  "description": "",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "name": "@regressao"
+    },
+    {
+      "name": "@subscription"
+    },
+    {
+      "name": "@subscribe-home-page"
+    }
+  ]
+});
+formatter.step({
+  "name": "preencho o campo Your e-mail address",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão confirmar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a mensagem \"You have been successfully subscribed!\"",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "SubscriptionStepDefinitions.a_mensagem(String)"
 });
 formatter.result({
   "status": "passed"

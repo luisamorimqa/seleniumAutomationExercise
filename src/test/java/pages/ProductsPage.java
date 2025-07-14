@@ -15,6 +15,22 @@ public class ProductsPage extends BasePage {
     private By continueShoppingButton = By.xpath("//*[@id='cartModal']/div/div/div[3]/button");
     private By viewCartButton = By.xpath("//*[@id='header']/div/div/div/div[2]/div/ul/li[3]/a");
 
+    private By emailSubscriptionField = By.id("susbscribe_email");
+    private By subscriptionButton = By.id("subscribe");
+    private By subscriptionSuccessMessage = By.xpath("//*[@id='success-subscribe']/div");
+
+    public void fillSubscriptionEmail(String value) {
+        fillField(emailSubscriptionField, value);
+    }
+
+    public void clickSubscrptionButton() {
+        clickElement(subscriptionButton);
+    }
+
+    public void checkSuccessMessage(String value) {
+        checkText(subscriptionSuccessMessage, value);
+    }
+
     public void clickAddToCartFirstProduct() {
         Actions actions = new Actions(getDriver());
         actions.moveToElement(getDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]"))).perform();

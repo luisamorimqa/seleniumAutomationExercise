@@ -1,9 +1,9 @@
 [
   {
-    "line": 4,
+    "line": 3,
     "elements": [
       {
-        "line": 9,
+        "line": 8,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,107 +11,77 @@
         "steps": [
           {
             "result": {
-              "duration": 11143348800,
+              "duration": 10795236000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "que esteja logado no sistema",
             "match": {
               "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
             },
             "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 2665763700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "clico no botão Products",
-            "match": {
-              "location": "AddProductAtCartStepDefinitions.clico_no_botão_Products()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 362450900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "a tela de produtos é exibida",
-            "match": {
-              "location": "AddProductAtCartStepDefinitions.a_tela_de_produtos_é_exibida()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 694266100,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clico no botão \u0027Add to cart\u0027 do primeiro produto",
-            "match": {
-              "location": "AddProductAtCartStepDefinitions.clico_no_botão_Add_to_cart_do_primeiro_produto()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1100272100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "clico no botão \u0027Continue Shopping\u0027",
-            "match": {
-              "location": "AddProductAtCartStepDefinitions.clico_no_botão_Continue_Shopping()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1127007700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "clico no botão \u0027View Cart\u0027",
-            "match": {
-              "location": "AddProductAtCartStepDefinitions.clico_no_botão_View_Cart()"
-            },
-            "keyword": "E "
           }
         ]
       },
       {
-        "line": 18,
-        "name": "Remove produto com sucesso",
+        "line": 12,
+        "name": "Subscription at products page",
         "description": "",
-        "id": "remove-produto-do-carrinho;remove-produto-com-sucesso",
+        "id": "subscription;subscription-at-products-page",
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 361157700,
+              "duration": 3837583900,
               "status": "passed"
             },
-            "line": 19,
-            "name": "clico no botão remover produto do carrinho",
+            "line": 13,
+            "name": "acesso a tela de produtos",
             "match": {
-              "location": "RemoveProductAtCartStepDefinitions.clico_no_botão_remover_produto_do_carrinho()"
+              "location": "SubscriptionStepDefinitions.acesso_a_tela_de_produtos()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 680245300,
+              "duration": 257132700,
               "status": "passed"
             },
-            "line": 20,
-            "name": "o produto deve ser removido do carrinho",
+            "line": 14,
+            "name": "preencho o campo Your e-mail address",
             "match": {
-              "location": "RemoveProductAtCartStepDefinitions.o_produto_deve_ser_removido_do_carrinho()"
+              "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 116681000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico no botão confirmar",
+            "match": {
+              "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 81535600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a mensagem \"You have been successfully subscribed!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "You have been successfully subscribed!",
+                  "offset": 12
+                }
+              ],
+              "location": "SubscriptionStepDefinitions.a_mensagem(String)"
             },
             "keyword": "Então "
           }
@@ -121,23 +91,118 @@
             "name": "@regressao"
           },
           {
-            "name": "@remove-at-cart-success"
+            "name": "@subscription"
+          },
+          {
+            "name": "@subscribe-product-page"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7142287000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja logado no sistema",
+            "match": {
+              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Subscription at home page",
+        "description": "",
+        "id": "subscription;subscription-at-home-page",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 295185500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "preencho o campo Your e-mail address",
+            "match": {
+              "location": "SubscriptionStepDefinitions.preencho_o_campo_Your_e_mail_address()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 128544800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clico no botão confirmar",
+            "match": {
+              "location": "SubscriptionStepDefinitions.clico_no_botão_confirmar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 75845800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "a mensagem \"You have been successfully subscribed!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "You have been successfully subscribed!",
+                  "offset": 12
+                }
+              ],
+              "location": "SubscriptionStepDefinitions.a_mensagem(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@subscription"
+          },
+          {
+            "name": "@subscribe-home-page"
           }
         ]
       }
     ],
-    "name": "Remove produto do carrinho",
-    "description": "    Eu como usuário do sistema\n    Quero remover produto do carrinho\n    Para que eu não compre um produto não desejado",
-    "id": "remove-produto-do-carrinho",
+    "name": "Subscription",
+    "description": "    Eu como usuário\n    Quero me inscrever\n    Para receber informações e atualizações do site",
+    "id": "subscription",
     "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/removeProductOfCart.feature",
+    "uri": "src/test/resources/features/subscription.feature",
     "tags": [
       {
         "name": "@regressao",
         "type": "Tag",
         "location": {
-          "line": 3,
-          "column": 3
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@subscription",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 12
         }
       }
     ]
