@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7592265500,
+              "duration": 7735515900,
               "status": "passed"
             },
             "line": 9,
@@ -24,16 +24,16 @@
         ]
       },
       {
-        "line": 12,
-        "name": "Filter Polo brand products",
+        "line": 19,
+        "name": "Filter \"polo\" products",
         "description": "",
-        "id": ";filter-polo-brand-products",
+        "id": ";filter-\"\u003cbrand\u003e\"-products;;2",
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1675948600,
+              "duration": 1499744500,
               "status": "passed"
             },
             "line": 13,
@@ -45,26 +45,311 @@
           },
           {
             "result": {
-              "duration": 1550010800,
+              "duration": 1234617700,
               "status": "passed"
             },
             "line": 14,
-            "name": "seleciono o brand name",
+            "name": "seleciono o brand name \"polo\"",
             "match": {
-              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name()"
+              "arguments": [
+                {
+                  "val": "polo",
+                  "offset": 24
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name(String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cPO[u]LO\u003e but was:\u003cPO[]LO\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat support.Commands.checkText(Commands.java:68)\r\n\tat pages.ProductsPage.checkShowCategory(ProductsPage.java:89)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o_mesmo_brand_name(CartBrandProductsStepDefinitions.java:27)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o mesmo brand name(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
-              "duration": 91249100,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cPOLO[s]\u003e but was:\u003cPOLO[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat support.Commands.checkText(Commands.java:68)\r\n\tat pages.ProductsPage.checkShowedCategoryPolo(ProductsPage.java:106)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(CartBrandProductsStepDefinitions.java:51)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o \"polo\"(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
+              "duration": 93865000,
               "status": "failed"
             },
             "line": 15,
-            "name": "o campo de categoria e marca deverá mostrar o mesmo brand name",
+            "name": "o campo de categoria e marca deverá mostrar o \"polo\"",
             "match": {
-              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o_mesmo_brand_name()"
+              "arguments": [
+                {
+                  "val": "polo",
+                  "offset": 47
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@filter-brand"
+          },
+          {
+            "name": "@filter-brand-products"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 10231724900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja logado no sistema",
+            "match": {
+              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Filter \"madame\" products",
+        "description": "",
+        "id": ";filter-\"\u003cbrand\u003e\"-products;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 3158043900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "acesse a tela de produtos",
+            "match": {
+              "location": "CartBrandProductsStepDefinitions.acesse_a_tela_de_produtos()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1475754100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "seleciono o brand name \"madame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "madame",
+                  "offset": 24
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat support.Commands.checkTextContains(Commands.java:82)\r\n\tat pages.ProductsPage.checkShowedCategory(ProductsPage.java:110)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(CartBrandProductsStepDefinitions.java:59)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o \"madame\"(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
+              "duration": 83917500,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "o campo de categoria e marca deverá mostrar o \"madame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "madame",
+                  "offset": 47
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@filter-brand"
+          },
+          {
+            "name": "@filter-brand-products"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 9083489700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja logado no sistema",
+            "match": {
+              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Filter \"H\u0026M\" products",
+        "description": "",
+        "id": ";filter-\"\u003cbrand\u003e\"-products;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1775393600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "acesse a tela de produtos",
+            "match": {
+              "location": "CartBrandProductsStepDefinitions.acesse_a_tela_de_produtos()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1469802600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "seleciono o brand name \"H\u0026M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "H\u0026M",
+                  "offset": 24
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat support.Commands.checkTextContains(Commands.java:82)\r\n\tat pages.ProductsPage.checkShowedCategory(ProductsPage.java:110)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(CartBrandProductsStepDefinitions.java:55)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o \"H\u0026M\"(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
+              "duration": 86080800,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "o campo de categoria e marca deverá mostrar o \"H\u0026M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "H\u0026M",
+                  "offset": 47
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressao"
+          },
+          {
+            "name": "@filter-brand"
+          },
+          {
+            "name": "@filter-brand-products"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 8618428800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que esteja logado no sistema",
+            "match": {
+              "location": "LogoutStepDefinitions.que_esteja_logado_no_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Filter \"mast\u0026harbour\" products",
+        "description": "",
+        "id": ";filter-\"\u003cbrand\u003e\"-products;;5",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1772049700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "acesse a tela de produtos",
+            "match": {
+              "location": "CartBrandProductsStepDefinitions.acesse_a_tela_de_produtos()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1466571300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "seleciono o brand name \"mast\u0026harbour\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mast\u0026harbour",
+                  "offset": 24
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.seleciono_o_brand_name(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat support.Commands.checkTextContains(Commands.java:82)\r\n\tat pages.ProductsPage.checkShowedCategory(ProductsPage.java:110)\r\n\tat steps.CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(CartBrandProductsStepDefinitions.java:63)\r\n\tat ✽.o campo de categoria e marca deverá mostrar o \"mast\u0026harbour\"(src/test/resources/features/viewAndCartBrandProducts.feature:15)\r\n",
+              "duration": 81189600,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "o campo de categoria e marca deverá mostrar o \"mast\u0026harbour\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mast\u0026harbour",
+                  "offset": 47
+                }
+              ],
+              "location": "CartBrandProductsStepDefinitions.o_campo_de_categoria_e_marca_deverá_mostrar_o(String)"
             },
             "keyword": "Então "
           }

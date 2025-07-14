@@ -5,11 +5,18 @@
     Quero filtrar os produtos por marca
     Para conseguir encontrar os produtos mais facilmente
 
-  Contexto:
-    Dado que esteja logado no sistema
+    Contexto:
+      Dado que esteja logado no sistema
 
     @filter-brand-products
-    Cenário: Filter Polo brand products
+    Esquema do Cenário: Filter "<brand>" products
       E acesse a tela de produtos
-      Quando seleciono o brand name
-      Então o campo de categoria e marca deverá mostrar o mesmo brand name
+      Quando seleciono o brand name "<brand>"
+      Então o campo de categoria e marca deverá mostrar o "<brand>"
+
+      Exemplos:
+        | brand        |
+        | polo         |
+        | madame       |
+        | H&M          |
+        | mast&harbour |

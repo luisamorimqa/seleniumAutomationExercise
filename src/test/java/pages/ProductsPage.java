@@ -19,8 +19,13 @@ public class ProductsPage extends BasePage {
     private By subscriptionButton = By.id("subscribe");
     private By subscriptionSuccessMessage = By.xpath("//*[@id='success-subscribe']/div");
 
-    private By brandsOptions = By.xpath("//div[@class='brands-name']/ul/li[1]/a");
-    private By showCategory = By.xpath("//h2[@class='title text-center']/a/span");
+    private By brandsOptionsPolo = By.xpath("//div[@class='brands-name']/ul/li[1]/a");
+    private By brandsOptionsHeM = By.xpath("//div[@class='brands-name']/ul/li[2]/a");
+    private By brandsOptionsMadame = By.xpath("//div[@class='brands-name']/ul/li[3]/a");
+    private By brandsOptionsMastEHarbour = By.xpath("//div[@class='brands-name']/ul/li[4]/a");
+
+    private By showedCategoryPolo = By.xpath("//h2[@class='title text-center']/a/span");
+    private By showedCategory = By.xpath("//h2[@class='title text-center']");
 
     public void fillSubscriptionEmail(String value) {
         fillField(emailSubscriptionField, value);
@@ -81,11 +86,27 @@ public class ProductsPage extends BasePage {
         checkText(By.xpath("/html/body/section[2]/div/div/div[2]/div/h2"), "ALL PRODUCTS");
     }
 
-    public void clickBrandsOption() {
-        clickElement(brandsOptions);
+    public void clickBrandsPolo() {
+        clickElement(brandsOptionsPolo);
     }
 
-    public void checkShowCategory(String value) {
-        checkText(showCategory, value);
+    public void clickBrandsHeM() {
+        clickElement(brandsOptionsHeM);
+    }
+
+    public void clickBrandsMadame() {
+        clickElement(brandsOptionsMadame);
+    }
+
+    public void clickMastEHarbour() {
+        clickElement(brandsOptionsMastEHarbour);
+    }
+
+    public void checkShowedCategoryPolo(String value) {
+        checkText(showedCategoryPolo, value);
+    }
+
+    public void checkShowedCategory(String value) {
+        checkTextContains(showedCategory, value);
     }
 }
