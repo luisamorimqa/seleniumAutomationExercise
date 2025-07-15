@@ -27,6 +27,8 @@ public class ProductsPage extends BasePage {
     private By showedCategoryPolo = By.xpath("//h2[@class='title text-center']/a/span");
     private By showedCategory = By.xpath("//h2[@class='title text-center']");
 
+    private By viewDatailFirstProduct = By.xpath("//div[2]/div[@class='features_items']/div[2]/div[@class='product-image-wrapper']/div[2]/ul/li/a");
+
     public void fillSubscriptionEmail(String value) {
         fillField(emailSubscriptionField, value);
     }
@@ -100,6 +102,10 @@ public class ProductsPage extends BasePage {
 
     public void clickMastEHarbour() {
         clickElement(brandsOptionsMastEHarbour);
+    }
+
+    public void clickViewDetailFirstProductClick() {
+        clickElement(viewDatailFirstProduct);
     }
 
     public void checkShowedCategoryPolo(String value) {

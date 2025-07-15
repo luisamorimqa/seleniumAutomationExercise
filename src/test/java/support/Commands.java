@@ -46,6 +46,20 @@ public class Commands extends RunCucumber {
         }
     }
 
+    public static void clearAndFillField(By element, String value) {
+        System.out.println("###############################################################################");
+        try {
+            System.out.println("*************** Preenchendo o campo " + element + " ***************");
+            waitElementBeClickable(element, 5000);
+            getDriver().findElement(element).clear();
+            getDriver().findElement(element).sendKeys(value);
+            System.out.println("*************** Campo preenchido ***************");
+        } catch(Exception exception) {
+            System.out.println("*************** Ocorreu um erro ao preencher o elemento " + element + " ***************");
+            System.out.println(exception);
+        }
+    }
+
     public static void clickElement(By element) {
         System.out.println("###############################################################################");
         try {

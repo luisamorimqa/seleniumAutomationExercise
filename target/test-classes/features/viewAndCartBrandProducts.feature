@@ -1,6 +1,6 @@
 #language: pt
 @regressao @filter-brand
-  Funcionalidade:
+  Funcionalidade: Filtrar produtos
     Eu como usuário
     Quero filtrar os produtos por marca
     Para conseguir encontrar os produtos mais facilmente
